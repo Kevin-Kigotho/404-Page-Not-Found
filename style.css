@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav-bar {
+    padding: 1rem 9%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #333;
+}
+
+.header__hero {
+    padding: 2rem 9%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.header__hero .header__hero-img {
+    padding-bottom: 1.5rem;
+}
+
+/* .header__hero .header__hero-text {
+    padding-left: 3em;
+} */
+
+.header__hero .header__hero-text h1 {
+    color: #333;
+    font-size: 50px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.header__hero .header__hero-text p {
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 382px;
+    margin-bottom: 1.8rem;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 1em 1.2em;
+    background-color: #333;
+    color: #fff;
+}
+
+@media (min-width: 320px) {
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+}
+
+@media (min-width: 671px) {
+    .header__hero .header__hero-text {
+        padding-left: 3em;
+    }
+}
